@@ -10,5 +10,8 @@ Enumerates through ports (0-65534) and attempts to open a socket on each one. If
 ## MacChaningDaemon.py
 Creates a daemon to change the mac address on an interface once per hour (far too aggressive, I'm aware).
 
+## ScanForAPs.py
+Periodically scans for new access points available to the wireless network interface and prints any new found access points to the terminal.
+
 ## SvenskaVeckanNummer.py
 Original skeleton for the script that's used in Docker (see: Docker/SwedishWeekNumber)
