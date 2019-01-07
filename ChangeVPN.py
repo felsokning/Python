@@ -25,6 +25,7 @@ import NetworkManager
 
 # Find all of the VPN connections on the machine.
 vpns = list()
+current_vpn = None
 connections = NetworkManager.Settings.ListConnections()
 for c in connections:
     if "vpn" in c.GetSettings()['connection']['type']:
