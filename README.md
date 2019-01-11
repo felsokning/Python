@@ -15,3 +15,6 @@ Periodically scans for new access points available to the wireless network inter
 
 ## SvenskaVeckanNummer.py
 Original skeleton for the script that's used in Docker (see: Docker/SwedishWeekNumber)
+
+## SwedishDate.py
+Class meant to be imported and used to return the ISO week number from a given date.
