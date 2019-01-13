@@ -18,6 +18,7 @@ __author__ = "felsokning"
 __copyright__ = "Copyright 2019"
 __license__ = "MIT"
 
+import os
 import random
 import time
 # Externals
@@ -52,8 +53,11 @@ if vpns.__len__() > 0:
             if "vpn" in a.Type:
                 current_vpn = a
 
-        # Choose a random one to connect to.
-        random_int = random.randint(0, (vpns.__len__() - 1))
+        # Choose a random one to connect to. We use the far more secure random method, with a larger seed,
+	# to try and prevent the random generation from being a predictable pattern (well, to try to make
+	# it far less predictable with our sample, at least).
+        rand = random.SystemRandom(os.urandom(99999999))
+        random_int = rand.randint(0, (vpns.__len__() - 1))
         random_vpn = vpns.__getitem__(random_int)
         new_connection = NetworkManager.Connection(random_vpn)
 
