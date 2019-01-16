@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 """Checks if there have been any speeches published at the Riksdagen in the last day.
 
-Uses Requests (https://docs.python-requests.org/en/master/) to see if the Riksdagen () has published any speeches in
-the last day and, if so, what they were. (Spoiler alert: You can open hyperlinks from terminal.)
+Uses Requests (https://docs.python-requests.org/en/master/) to see if the Riksdagen (https://www.riksdagen.se/) has
+published any speeches in the last day and, if so, what the id, name, and url to the speech is.
+(Spoiler alert: You can open hyperlinks from within terminal in *nix.)
 
 REQUIREMENTS:
     requests
