@@ -27,6 +27,7 @@ import NetworkManager
 # Find all of the VPN connections on the machine.
 vpns = list()
 current_vpn = None
+wireless_device = None
 connections = NetworkManager.Settings.ListConnections()
 for c in connections:
     if "vpn" in c.GetSettings()['connection']['type']:
@@ -54,8 +55,8 @@ if vpns.__len__() > 0:
                 current_vpn = a
 
         # Choose a random one to connect to. We use the far more secure random method, with a larger seed,
-	# to try and prevent the random generation from being a predictable pattern (well, to try to make
-	# it far less predictable with our sample, at least).
+        # to try and prevent the random generation from being a predictable pattern (well, to try to make
+        # it far less predictable with our sample, at least).
         rand = random.SystemRandom(os.urandom(99999999))
         random_int = rand.randint(0, (vpns.__len__() - 1))
         random_vpn = vpns.__getitem__(random_int)
