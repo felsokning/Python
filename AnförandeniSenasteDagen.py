@@ -37,7 +37,7 @@ if response.status_code is 200:
     if int(count) > 0:
         print("De hade {} anföranden i senaste dagen.".format(count))
         anföranden = json_response['anforandelista']['anforande']
+        for anförande in anföranden:
+            print("{0}: {1} - {2}".format(anförande["dok_id"], anförande["dok_titel"], anförande["protokoll_url_www"]))
     else:
         print("De hade ingen anföranden igår.")
-for anförande in anföranden:
-    print("{0}: {1} - {2}".format(anförande["dok_id"], anförande["dok_titel"], anförande["protokoll_url_www"]))
