@@ -1,6 +1,9 @@
 # Python
 Several scripts written in Python, to accomplish varying tasks.
 
+## AnförandeniSenasteDagen.py
+Uses the [Requests](https://docs.python-requests.org/en/master/) package to query the [Riksdagen](https://www.riksdagen.se/) (specifically, the [Riksdagen's API](https://data.riksdagen.se/)) for any speeches (Anföranden) posted in the past day and, if any are found, the Document ID, Title, and URL to the speech in question.
+
 ## ChangeVPN.py
 Randomly connects to a VPN connection on the wireless interface via [NetworkManager](https://developer.gnome.org/NetworkManager/stable/gdbus-org.freedesktop.NetworkManager.html#).
 
