@@ -23,10 +23,10 @@ vpn_list = list()
 connections = NetworkManager.Settings.ListConnections()
 for c in connections:
     if "vpn" in c.GetSettings()['connection']['type']:
-        vpns.append(c)
+        vpn_list.append(c)
 
 # We make sure we'e not spinning our wheels and/or calling delete on null.
 if len(vpn_list) > 0:
-    for v in vpns:
+    for v in vpn_list:
         print("Deleting: {}".format(v.object_path))
         v.Delete()

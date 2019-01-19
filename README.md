@@ -13,6 +13,9 @@ Enumerates through ports (0-65534) and attempts to open a socket on each one. If
 ## MacChaningDaemon.py
 Creates a daemon to change the mac address on an interface once per hour (far too aggressive, I'm aware).
 
+## ModifyOvpnConfigurations.py
+Modifies the OVPN configuration files referenced by NetworkManager with the username and password, changing the connection to autologin.
+
 ## RemoveVPNs.py
 Uses [NetworkManager](https://developer.gnome.org/NetworkManager/stable/gdbus-org.freedesktop.NetworkManager.html#) to enumerate all of the VPN profiles and then deletes them.
 
