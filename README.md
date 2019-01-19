@@ -16,6 +16,9 @@ Creates a daemon to change the mac address on an interface once per hour (far to
 ## ModifyOvpnConfigurations.py
 Modifies the OVPN configuration files referenced by NetworkManager with the username and password, changing the connection to autologin.
 
+## ObfuscatePhotos.py
+Imports the byte data from photo a given photo and applies a transformation to it to make it useless to AI. See the before and after.
+
 ## RemoveVPNs.py
 Uses [NetworkManager](https://developer.gnome.org/NetworkManager/stable/gdbus-org.freedesktop.NetworkManager.html#) to enumerate all of the VPN profiles and then deletes them.
 
