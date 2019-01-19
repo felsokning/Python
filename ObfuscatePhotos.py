@@ -29,4 +29,4 @@ filename = '/PhotoData/PhU2GL.jpg'
 image_data = (imageio.imread(filename)).astype('uint8')
 noise_mask = numpy.random.poisson(image_data)
 noisy_mask = (numpy.random.exponential(noise_mask)).astype('uint8')
-imageio.imwrite('/home/renholder/Bilder/test.jpg', noisy_mask)
+imageio.imwrite('/PhotoData/test.jpg', noisy_mask)
