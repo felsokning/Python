@@ -17,7 +17,8 @@ Creates a daemon to change the mac address on an interface once per hour (far to
 Modifies the OVPN configuration files referenced by NetworkManager with the username and password, changing the connection to autologin.
 
 ## ObfuscatePhotos.py
-Imports the byte data from photo a given photo and applies a transformation to it to make it useless to AI. See the before and after.
+Imports the byte data from photo a given photo and applies a transformation to it to make it useless to AI. See the [before](https://github.com/felsokning/Python/blob/master/PhotoData/PhU2GL.jpg) and [after](https://github.com/felsokning/Python/blob/master/PhotoData/test.jpg) to understand the context.
+As an FYI: Google believes the after photo to be "[fondos de pantalla pc](https://www.solofondos.com/fondos-de-pantalla-pc.html)"
 
 ## RemoveVPNs.py
 Uses [NetworkManager](https://developer.gnome.org/NetworkManager/stable/gdbus-org.freedesktop.NetworkManager.html#) to enumerate all of the VPN profiles and then deletes them.
