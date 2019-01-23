@@ -20,8 +20,14 @@ Modifies the OVPN configuration files referenced by NetworkManager with the user
 Imports the byte data from photo a given photo and applies a transformation to it to make it useless to AI. See the [before](https://github.com/felsokning/Python/blob/master/PhotoData/PhU2GL.jpg) and [after](https://github.com/felsokning/Python/blob/master/PhotoData/test.jpg) to understand the context.
 As an FYI: Google believes the after photo to be "[fondos de pantalla pc](https://www.solofondos.com/fondos-de-pantalla-pc.html)"
 
+## RemoveSyntolkat.py
+Removes [Syntolkat](https://en.wikipedia.org/wiki/Audio_description) files from a given path.
+
 ## RemoveVPNs.py
 Uses [NetworkManager](https://developer.gnome.org/NetworkManager/stable/gdbus-org.freedesktop.NetworkManager.html#) to enumerate all of the VPN profiles and then deletes them.
+
+## RenameSrtFiles.py
+Finds SRT (SubRip Text) files that do not contain the given [ISO 639-2 Code](https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes) and renames them to include the given code.
 
 ## ScanForAPs.py
 Periodically scans for new access points available to the wireless network interface and prints any new found access points to the terminal.
